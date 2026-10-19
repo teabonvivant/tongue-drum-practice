@@ -52,7 +52,7 @@
         <header class="dl-head"><h2>空靈鼓跟奏</h2><span class="dl-meta">空靈鼓練習室</span></header>
         <div class="dl-stage" data-scene="three" aria-label="立體空靈鼓，光點落到鼓面時敲擊">
           <canvas class="dl-backdrop" aria-hidden="true"></canvas><canvas class="dl-base" role="img" aria-label="立體花紋空靈鼓"></canvas><canvas class="dl-glow" aria-hidden="true"></canvas><div class="dl-labels"></div>
-          <label class="dl-stage-caption dl-instrument"><span class="dl-drum-key">D 調</span><select class="dl-layout" aria-label="3D 鼓款"><option value="d11">11 音鼓</option><option value="d15">15 音鼓</option></select></label><div class="dl-error" role="alert" hidden></div>
+          <label class="dl-stage-caption dl-instrument"><span class="dl-drum-key">D 調</span><span class="dl-drum-model">15 音鼓</span></label><div class="dl-error" role="alert" hidden></div>
           <div class="dl-now"><b class="dl-current">光落鼓面，輕輕敲奏</b></div>
         </div>
         <div class="dl-score" aria-label="同步單行簡譜">
@@ -61,14 +61,13 @@
           <div class="dl-score-status"><span class="dl-score-hint">點選音符，由該處練習</span><span class="dl-score-position">每次一行</span></div>
         </div>
         <div class="dl-transport">
-          <div class="dl-toolbar"><div class="dl-actions"><button class="dl-play" type="button"><span class="dl-play-icon" aria-hidden="true">▷</span><span>播放</span></button><button class="dl-stop" type="button" aria-label="停止演奏">停止</button><button class="dl-sound" type="button" aria-pressed="true" aria-label="開關聲音">聲音開</button></div><label class="dl-speed">速度<select aria-label="3D 版播放速度"></select></label></div>
+          <div class="dl-toolbar"><div class="dl-actions"><button class="dl-play" type="button"><span class="dl-play-icon" aria-hidden="true">▷</span><span>播放</span></button><button class="dl-stop" type="button" aria-label="停止演奏">停止</button><button class="dl-sound" type="button" aria-pressed="true" aria-label="開關聲音">聲音開</button></div><div class="dl-speed" role="group" aria-label="播放速度"><button type="button" data-step="-1" aria-label="減慢速度">‹ 慢</button><output>原速</output><button type="button" data-step="1" aria-label="加快速度">快 ›</button></div></div>
           <div class="dl-progress" role="progressbar" aria-label="旋律進度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
           <div class="dl-footnote"><span></span><span class="dl-time">0:00 / 0:30</span></div><span class="dl-status" aria-live="polite"></span>
         </div>
         <details class="dl-settings"><summary class="">畫面設定<span class="dl-settings-summary">青花纏枝蓮・星夜山台</span></summary>
-          <div class="dl-options"><label class="dl-field">跟隨聲部<select class="dl-voice" aria-label="教學聲部"></select></label><label class="dl-field">鼓面花紋及顏色<select class="dl-pattern" aria-label="3D 鼓面花紋"></select></label><label class="dl-field">場景<select class="dl-scene" aria-label="3D 場景"></select></label><label class="dl-field">光束<select class="dl-beam" aria-label="3D 光束"></select></label></div>
+          <div class="dl-options"><label class="dl-field">鼓面花紋及顏色<select class="dl-pattern" aria-label="3D 鼓面花紋"></select></label><label class="dl-field">場景<select class="dl-scene" aria-label="3D 場景"></select></label><label class="dl-field">光束<select class="dl-beam" aria-label="3D 光束"></select></label></div>
           
-          <div class="dl-finish"><label class="dl-glow-control"><span>光暈柔度 <output>64%</output></span><input class="dl-softness" type="range" min="0" max="100" value="64" aria-label="3D 光暈柔度"></label><label class="dl-ripple-control"><span>漣漪 <output>28%</output></span><input class="dl-ripple" type="range" min="0" max="100" value="28" aria-label="3D 漣漪強度"></label><label class="dl-score-toggle"><input class="dl-show-score" type="checkbox" checked>顯示一行樂譜</label></div>
         </details>
       </div>
     </section>
@@ -77,7 +76,7 @@
         <header class="dl-head"><h2>空靈鼓跟奏</h2><span class="dl-meta">空靈鼓練習室</span></header>
         <div class="dl-stage" data-scene="flat" aria-label="俯視空靈鼓，跟隨音位標記及下方樂譜敲擊">
           <canvas class="dl-backdrop" aria-hidden="true"></canvas><canvas class="dl-base" role="img" aria-label="平面俯視花紋空靈鼓"></canvas><canvas class="dl-glow" aria-hidden="true"></canvas><div class="dl-labels"></div>
-          <label class="dl-stage-caption dl-instrument"><span class="dl-drum-key">D 調</span><select class="dl-layout" aria-label="平面鼓款"><option value="d11">11 音鼓</option><option value="d15">15 音鼓</option></select></label><div class="dl-now"><b class="dl-current">跟隨音位，輕輕敲奏</b><span>俯視跟奏</span></div>
+          <label class="dl-stage-caption dl-instrument"><span class="dl-drum-key">D 調</span><span class="dl-drum-model">15 音鼓</span></label><div class="dl-now"><b class="dl-current">跟隨音位，輕輕敲奏</b><span>俯視跟奏</span></div>
         </div>
         <div class="dl-score" aria-label="同步單行簡譜">
           <div class="dl-score-head"><div><span class="dl-score-title">清露</span><span>1 = D　4/4</span></div><div class="dl-row-controls"><button class="dl-prev-row " type="button" aria-label="上一段樂譜">‹</button><span class="dl-row-label">第 1–2 小節</span><button class="dl-next-row " type="button" aria-label="下一段樂譜">›</button></div></div>
@@ -85,14 +84,13 @@
           <div class="dl-score-status"><span class="dl-score-hint">點選音符，由該處練習</span><span class="dl-score-position">每次一行</span></div>
         </div>
         <div class="dl-transport">
-          <div class="dl-toolbar"><div class="dl-actions"><button class="dl-play" type="button"><span class="dl-play-icon" aria-hidden="true">▷</span><span>播放</span></button><button class="dl-stop" type="button" aria-label="停止演奏">停止</button><button class="dl-sound" type="button" aria-pressed="true" aria-label="開關聲音">聲音開</button></div><label class="dl-speed">速度<select aria-label="平面版播放速度"></select></label></div>
+          <div class="dl-toolbar"><div class="dl-actions"><button class="dl-play" type="button"><span class="dl-play-icon" aria-hidden="true">▷</span><span>播放</span></button><button class="dl-stop" type="button" aria-label="停止演奏">停止</button><button class="dl-sound" type="button" aria-pressed="true" aria-label="開關聲音">聲音開</button></div><div class="dl-speed" role="group" aria-label="播放速度"><button type="button" data-step="-1" aria-label="減慢速度">‹ 慢</button><output>原速</output><button type="button" data-step="1" aria-label="加快速度">快 ›</button></div></div>
           <div class="dl-progress" role="progressbar" aria-label="旋律進度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
           <div class="dl-footnote"><span></span><span class="dl-time">0:00 / 0:30</span></div><span class="dl-status" aria-live="polite"></span>
         </div>
         <details class="dl-settings"><summary class="">畫面設定<span class="dl-settings-summary">青花纏枝蓮・星夜山台</span></summary>
-          <div class="dl-options"><label class="dl-field">跟隨聲部<select class="dl-voice" aria-label="教學聲部"></select></label><label class="dl-field">鼓面花紋及顏色<select class="dl-pattern" aria-label="平面鼓面花紋"></select></label><label class="dl-field">場景<select class="dl-scene" aria-label="平面場景"></select></label></div>
+          <div class="dl-options"><label class="dl-field">鼓面花紋及顏色<select class="dl-pattern" aria-label="平面鼓面花紋"></select></label><label class="dl-field">場景<select class="dl-scene" aria-label="平面場景"></select></label></div>
           
-          <div class="dl-finish"><label class="dl-score-toggle"><input class="dl-show-score" type="checkbox" checked>顯示一行樂譜</label></div>
         </details>
       </div>
     </section>
